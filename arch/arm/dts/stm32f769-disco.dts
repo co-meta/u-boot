@@ -60,7 +60,7 @@
 	};
 
 	aliases {
-		serial0 = &usart1;
+		serial0 = &usart6;
 	};
 
 	leds {
@@ -136,6 +136,12 @@
 
 &usart1 {
 	pinctrl-0 = <&usart1_pins_a>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
+&usart6 {
+	pinctrl-0 = <&usart6_pins_a>;
 	pinctrl-names = "default";
 	status = "okay";
 };

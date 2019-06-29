@@ -56,6 +56,9 @@
 			"fdt_high=0xffffffffffffffff\0"		\
 			"initrd_high=0xffffffffffffffff\0"	\
 			"ramdisk_addr_r=0xD0900000\0"		\
+			"ipaddr=192.168.2.3\0"		\
+			"serverip=192.168.2.4\0"		\
+            "netboot=tftp 0xc0800000 stm32f769-disco.dtb;tftp 0xc0804000 uImage;bootm 0xc0804000 - 0xc0800000\0"        \
 			BOOTENV
 
 /*

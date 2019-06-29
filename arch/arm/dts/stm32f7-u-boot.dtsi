@@ -145,3 +145,9 @@
 	u-boot,dm-pre-reloc;
 	clocks = <&rcc 0 STM32F7_APB2_CLOCK(USART1)>;
 };
+
+&usart6 {
+	u-boot,dm-pre-reloc;
+	clocks = <&rcc 0 STM32F7_APB2_CLOCK(USART6)>;
+};
+
